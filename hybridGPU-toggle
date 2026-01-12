@@ -1,0 +1,18 @@
+#!/bin/bash
+set -e
+
+SRC="/etc/X11/xorg.conf.d/10-nvidia-primary.conf"
+DEST="$HOME/.igpud/10-nvidia-primary.conf"
+
+if [ -f "$SRC" ]; then
+	echo "Setting discrete GPU to xorg default..."
+	sudo mv "$SRC" "$DEST"
+else
+	echo "Removing discrete GPU from xorg default..."
+	sudo mv "$DEST" "$SRC"
+fi
+
+echo "Regenerating initramfs"
+sudo mkinitcpio -P
+
+echo "**Reboot to apply changes!**"

@@ -1,0 +1,15 @@
+[Unit]
+Description=Force 144hz after PRIME GPU switch
+After=graphical-session.target
+
+[Service]
+Type=oneshot
+Enviroment=DISPLAY=:o
+Enviroment=XAUTHORITY=/home/$USER/.Xauthority
+ExecStartPre=/bin/sleep 6
+ExecStart=/bin/bash -c 'xrandr --output HDMI-0 --mode 1920x1080 --rate 144'
+# "$(xrandr | awk "/connected/{print \$1: exit}")" --rate 60'
+ExecStartPost=/bin/echo "144hz applied"
+
+[Install]
+WantedBy=default.target
