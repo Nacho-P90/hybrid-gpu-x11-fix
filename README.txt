@@ -87,4 +87,7 @@ systemctl --user enable set-refresh.service
 ====ALL=DONE=========================================
 
 ----AUTOMATIC-REMOVAL--------------------------------
-Run remove.sh
+[Execute]
+sudo ./uninstall.sh
+
+uninstall.sh contains additional instructions that pair with setup.sh instructions if you set set-refresh.service .
