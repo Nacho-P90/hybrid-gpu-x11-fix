@@ -1,6 +1,6 @@
 HYBRID HANG FIX FOR X11 Nvidia+Intel
 Updated: January 11, 2026
-Author: Nacho_P90
+Author: Nacho-P90
 
 [ORIGINALY MADE FOR SYSTEM]
 OS:	Arch Linux
