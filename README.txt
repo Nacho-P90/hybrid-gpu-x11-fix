@@ -28,7 +28,7 @@ Heavily Reduces GPU Hang Related Errors for modern videogames and GPU intensive 
 - While the descrete GPU is set to default, the built in display will likely not 
 turn on and an external monitor will have to be used.
 - Installing this will increase your initial logon black-screen time by up to 8 seconds.
-- Does not stop crashes while playing gary's mod (possibly other source games)
+- Does not stop hang issues while playing gary's mod (possibly other source games)
 
 [STORAGE COST] ~5 KiB
 
