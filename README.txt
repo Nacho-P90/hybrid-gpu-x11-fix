@@ -87,4 +87,4 @@ systemctl --user enable set-refresh.service
 ====ALL=DONE=========================================
 
 ----AUTOMATIC-REMOVAL--------------------------------
-Run remove
+Run remove.sh
