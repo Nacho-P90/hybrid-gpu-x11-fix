@@ -19,15 +19,7 @@ while gaming or doing GPU heavy tasks
 This works because it forces Xorg to commit system rendering to either the NVIDIA dgpu while active, this eliminates a massive portion of driver handoff issues that trigger hangs under heavy load.
 
 [BACKSTORY]
-Got the laptop for gaming and game development, when I tried to play arc raiders on Windows 11
-the system would quickly freeze and soon after I would get either a TDR_RECOVERY_ERROR or a
-WATCHDOG_VIOLATION stop code. I tried several several things and all I got out of them was
-wasting time in registry settings, or fighting with the modern windows 11 settings app to try
-and get it to work. Not wanting to return the laptop (the deal I got for it was insane, I
-wonder why), I remembered using linux and how well it worked with previous systems I have
-had. So I did some reaserch, and I found out that Xorg can for the most part disable a GPU.
-Now, im not proud of it but I did use chatGPT to help with the syntax because I never really
-configured a linux system like this. 14 days later, I end up with this, and it works pretty well.
+Got the laptop for gaming and game development, when I tried to play arc raiders on Windows 11 the system would quickly freeze and soon after I would get either a TDR_RECOVERY_ERROR or a WATCHDOG_VIOLATION stop code. I tried several several things and all I got out of them was wasting time in registry settings, or fighting with the modern windows 11 settings app to try and get it to work. Not wanting to return the laptop (the deal I got for it was insane, I wonder why), I remembered using linux and how well it worked with previous systems I have had. So I did some reaserch, and I found out that Xorg can for the most part disable a GPU. Now, im not proud of it but I did use chatGPT to help with the syntax because I never really configured a linux system like this. 14 days later, I end up with this, and it works pretty well.
 
 [BENEFITS]
 Heavily Reduces GPU Hang Related Errors for modern videogames and GPU intensive tasking.
